@@ -1,7 +1,7 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
+[ y] <div> and <span>
+[ y ] border:, margin:, and padding: 
 [ y] Three Images
 
 Select TWO Additional Features to Add  
@@ -10,7 +10,7 @@ Select TWO Additional Features to Add
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
-[ no ] Feature 6 - Unique Border Styles
+[ y ] Feature 6 - Unique Border Styles
 -->
 
 
@@ -22,11 +22,35 @@ Select TWO Additional Features to Add
   <meta charset="utf-8">
   <style>
     h1{
-      margin-top:270px;
+     margin-top:270px;
       margin-left: 600px;
+      font-family: cursive;
+      color:#5c4d4d;
+    }
+    h2{
+      font-family: cursive;
+      color:#5c4d4d;
+      margin-left: 100px;
     }
 #Intro{
- 
+ font-family: cursive;
+ color:#685454;
+ border-right:40px ;
+ padding-left: 150px;
+ padding-right: 150px;
+}
+#end{
+  font-family: cursive;
+ color:#685454;
+ text-align: center;
+}
+.name{
+  color: whitesmoke;
+}
+.rest-of-image{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
 }
 body{
   background-image:url("https://st2.depositphotos.com/1036506/11040/i/450/depositphotos_110404886-Old-paper-background-with-vintage-border-and-patterns..jpg");
@@ -34,18 +58,24 @@ body{
   background-repeat:no-repeat;
   background-attachment: fixed;
 }
+img{
+  border-style:double;
+  border-color: #c7b198;
+  border-width: 15px;
+  border-radius: 20px;
+}
   </style>
 </head>
 <body>
-<h1>You are invited to Viscountess Tsenira's grand ball</h1>
- <center><div id="Intro"><p>  Dear name, the Viscountess has generously extended an invitation to you and a plus one. The date for the ball is to be set at the fifth of genosis and we will expect you to come. Do come dressed appropriately, or else you will not be let into the ball. If you cannot afford the proper attire, I suggest that you simply don't come instead of making a fool of yourself.</p></div>
- <p>For our dear guest who has the attire to attend, there will be multitudes of festivites present.Besides from being able to dance in our beloved viscountess's beautiful ballroom</p></center>
- <img src="https://img.freepik.com/free-photo/grand-theater-interior_23-2151949842.jpg?semt=ais_hybrid&w=740&q=80" width="500">
+<h1>You are invited to <span class="name">Viscountess Tsenira's</span> grand ball</h1>
+ <center><div id="Intro"><p>  Dear name, the <span class="name">Viscountess</span> has generously extended an invitation to you and a plus one. The date for the ball is to be set at the fifth of genosis and we will expect you to come. Do come dressed appropriately, or else you will not be let into the ball.</p>
+ <p>For our dear guest who has the attire to attend, there will be multitudes of festivites present.Besides from being able to dance in our beloved <span class="name">viscountess's </span>beautiful ballroom</p></div></center>
+ <center><img src="https://img.freepik.com/free-photo/grand-theater-interior_23-2151949842.jpg?semt=ais_hybrid&w=740&q=80" width="500"></center>
 <h2>Enjoy delicacies:</h2>
-<img src="https://static.wixstatic.com/media/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png/v1/fill/w_640,h_432,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png" width="500">
+<strong class=rest-of-image><img src="https://static.wixstatic.com/media/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png/v1/fill/w_640,h_432,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png" width="500"></strong>
 <h2>And enjoy a live opera show by the finest singers of all!</h2>
-<img src="https://assets.londonist.com/uploads/2017/02/i730/covert_garden_theatre_edited.jpg" width="500">
-<p>We hpe you will have the grandest of times
-  - The Viscountess </p>
+<strong class=rest-of-image><img src="https://assets.londonist.com/uploads/2017/02/i730/covert_garden_theatre_edited.jpg" width="500"></strong>
+<p id="end">We hpe you will have the grandest of times
+  - <span class="name">The Viscountess</span> </p>
 </body>
 </html>
