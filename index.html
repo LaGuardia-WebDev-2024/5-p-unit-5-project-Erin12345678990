@@ -5,11 +5,11 @@ Requirements
 [ y] Three Images
 
 Select TWO Additional Features to Add  
-[ no ] Feature 1 - Flexbox
+[ y] Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
+[ y ] Feature 5 - Use a .Gif
 [ y ] Feature 6 - Unique Border Styles
 -->
 
@@ -43,14 +43,30 @@ Select TWO Additional Features to Add
   font-family: cursive;
  color:#685454;
  text-align: center;
+ font-size:20px;
 }
 .name{
   color: whitesmoke;
+  background-color: #5c4d4d;
+}
+#ballroom{
+padding-left: 90 px;
 }
 .rest-of-image{
- display: flex;
- justify-content: space-around;
- align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+#food{
+ padding-left: 50px;
+ padding-top: 20px;
+}
+#opera{
+  padding-left:100px;
+  padding-top: 20px;
+}
+.yaba{
+  margin-left:200px ;
 }
 body{
   background-image:url("https://st2.depositphotos.com/1036506/11040/i/450/depositphotos_110404886-Old-paper-background-with-vintage-border-and-patterns..jpg");
@@ -70,12 +86,17 @@ img{
 <h1>You are invited to <span class="name">Viscountess Tsenira's</span> grand ball</h1>
  <center><div id="Intro"><p>  Dear name, the <span class="name">Viscountess</span> has generously extended an invitation to you and a plus one. The date for the ball is to be set at the fifth of genosis and we will expect you to come. Do come dressed appropriately, or else you will not be let into the ball.</p>
  <p>For our dear guest who has the attire to attend, there will be multitudes of festivites present.Besides from being able to dance in our beloved <span class="name">viscountess's </span>beautiful ballroom</p></div></center>
- <center><img src="https://img.freepik.com/free-photo/grand-theater-interior_23-2151949842.jpg?semt=ais_hybrid&w=740&q=80" width="500"></center>
-<h2>Enjoy delicacies:</h2>
-<strong class=rest-of-image><img src="https://static.wixstatic.com/media/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png/v1/fill/w_640,h_432,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png" width="500"></strong>
+ <center><img src="https://img.freepik.com/free-photo/grand-theater-interior_23-2151949842.jpg?semt=ais_hybrid&w=740&q=80" 
+width="500"></center>
+<span class="yaba"><img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUyZDJ3ZXFxemk3bDZvYXp5ZWV0MTl4Y2lqZG80NDZqOWo3M3g2ajRxMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xJlu63zTpKMnxGIFYP/200w.gif"
+width="300"></span>
+<div class=rest-of-image>
+  <h2>Enjoy delicacies:</h2>
+<span id="food"><img src="https://static.wixstatic.com/media/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png/v1/fill/w_640,h_432,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2f94e1_693d4739633144b9835d7f4c7b0d8966~mv2.png" width="500"></span></div>
+<div class=rest-of-image>
 <h2>And enjoy a live opera show by the finest singers of all!</h2>
-<strong class=rest-of-image><img src="https://assets.londonist.com/uploads/2017/02/i730/covert_garden_theatre_edited.jpg" width="500"></strong>
-<p id="end">We hpe you will have the grandest of times
+<span id="opera"><img src="https://assets.londonist.com/uploads/2017/02/i730/covert_garden_theatre_edited.jpg" width="500"></span></div>
+<p id="end">We hope you will have the grandest of times
   - <span class="name">The Viscountess</span> </p>
 </body>
 </html>
